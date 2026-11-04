@@ -1,0 +1,19 @@
+{
+  "name": "hollowfang",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node tools/sync-from-game.ts",
+    "package": "node tools/package-hollowfang.ts",
+    "typecheck": "tsc"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "fflate": "^0.8.3",
+    "typescript": "^7.0.2"
+  }
+}
