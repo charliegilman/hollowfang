@@ -16,7 +16,6 @@ Actor lastVictim
 
 Event OnInit()
     Debug.Trace("[Hollowfang] controller initialised")
-    Debug.Notification("Hollowfang controller loaded")   ; debug - remove in 1.0.1
     GiveDagger()
 EndEvent
 
@@ -61,14 +60,14 @@ Function CheckUnlocks(Int kills)
         lastUnlock = 10
         CG_HollowfangMsgSoulFeeding.Show()
     EndIf
-    ; If kills >= 25 && lastUnlock < 25
-    ;     lastUnlock = 25
-    ;     CG_HollowfangMsgSilentStep.Show()
-    ; EndIf
-    ; If kills >= 50 && lastUnlock < 50
-    ;     lastUnlock = 50
-    ;     CG_HollowfangMsgDeepThirst.Show()
-    ; EndIf
+    If kills >= 25 && lastUnlock < 25
+        lastUnlock = 25
+        CG_HollowfangMsgSilentStep.Show()
+    EndIf
+    If kills >= 50 && lastUnlock < 50
+        lastUnlock = 50
+        CG_HollowfangMsgDeepThirst.Show()
+    EndIf
 EndFunction
 
 Function RefundCharge()

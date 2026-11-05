@@ -2,7 +2,7 @@ Scriptname CG_HollowfangWeapon extends ObjectReference
 
 CG_HollowfangController Property CG_HollowfangQuest Auto
 Perk Property CG_HollowfangPerk Auto
-Spell Property CG_HollowfangPassives Auto   ; stays empty until Stage 4
+Spell Property CG_HollowfangPassives Auto
 Actor Property PlayerRef Auto
 
 Event OnEquipped(Actor akActor)

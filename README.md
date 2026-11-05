@@ -47,6 +47,8 @@ Hollowfang counts every creature or person you kill with it. Corpse hits don't c
 |---|---|
 | 10 | **Soul Feeding:** each kill restores some of the enchantment's charge |
 | 10, 20, 30, 40, 50 | **Stride:** +2% movement speed per tier, up to +10% |
+| 25 | **Silent Step:** footsteps are 25% quieter. Doesn't stack with Muffle |
+| 50 | **Deep Thirst:** each hit drains 5 stamina from the target and gives it to you |
 
 All bonuses only apply while Hollowfang is equipped.
 
@@ -56,9 +58,9 @@ Hollowfang only adds new records and doesn't change any vanilla ones, so it shou
 
 As with any scripted mod, **don't uninstall it partway through a playthrough.** The scripts leave data in your save that can't be cleanly removed.
 
-## Known issues
+## Updating
 
-- 1.0.0 shows a "Hollowfang controller loaded" debug notification when the mod first loads. It will be removed in 1.0.1.
+Updating from an earlier version is safe on an existing save. Install the new version over the old one. If you've already passed a kill milestone, its unlock is announced on your next kill.
 
 ## Records (for patchers)
 
@@ -71,9 +73,10 @@ All records use the `CG_Hollowfang` prefix:
 | GLOB | `CG_HollowfangKills` | Kill counter |
 | PERK | `CG_HollowfangPerk` | On-hit tracker and level scaling |
 | SPEL | `CG_HollowfangHitSpell` | Hidden on-hit kill tracker |
-| SPEL | `CG_HollowfangPassives` | Ability holding the speed tiers |
+| SPEL | `CG_HollowfangPassives` | Ability holding the speed tiers and Silent Step |
 | MGEF | `CG_HollowfangKillTrackerEffect` | Scripted kill-tracking effect |
 | MGEF | `CG_HollowfangSpeedEffect` | +2% SpeedMult step |
+| MGEF | `CG_HollowfangSilentStepEffect` | MovementNoiseMult reduction (Peak Value Modifier) |
 | MESG | `CG_HollowfangMsg*` | Unlock popups |
 
 ---
