@@ -4,7 +4,18 @@ All notable changes to Hollowfang are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.1.0] - 2026-11-05
+
+Safe to install over 1.0.0 on an existing save.
+
+### Added
+- Silent Step: at 25 kills, your footsteps are 25% quieter while Hollowfang is equipped. It doesn't stack with Muffle, and it's listed under Magic > Active Effects.
+- Deep Thirst: at 50 kills, each hit with Hollowfang drains 5 stamina from the target and gives it to you.
+- A description for Hollowfang's abilities in the Active Effects menu.
+- Players who passed 25 or 50 kills in 1.0.0 get the matching unlock message on their next kill.
+
+### Fixed
+- Removed the "Hollowfang controller loaded" debug notification shown when the mod first loads.
 
 ## [1.0.0] - 2026-11-04
 
